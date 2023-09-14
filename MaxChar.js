@@ -7,21 +7,20 @@
 
 function maxChar(str) {
     const charObject = {};
-    for(let char of str) {
+    for (let char of str) {
         charObject[char] ? charObject[char]++ : charObject[char] = 1;
     }
 
     let longestValue = 0;
     let longestKey = '';
-    for(let key of str) {
-        if(charObject[key] > longestValue) {
+    for (let key of str) {
+        if (charObject[key] > longestValue) {
             longestValue = charObject[key];
             longestKey = key;
         }
     }
     // return `${longestKey} - ${longestValue}`;
-    return longestKey
+    return longestKey;
 }
 
-module.exports = maxChar;
 console.log(maxChar("abcccccccd"));
