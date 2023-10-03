@@ -8,6 +8,7 @@
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
 function capitalize(str) {
+                // FIRST SOLUTION
   let finalString = "";
   for (let i = 0; i < str.length; i++) {
     if (i === 0) finalString += str[i].toUpperCase();
@@ -15,6 +16,13 @@ function capitalize(str) {
     else finalString += str[i];
   }
   return finalString;
+
+                // SECOND SOLUTION
+//   let finalString = [];
+//   for(let word of str.split(' ')) {
+//       finalString.push(word[0].toUpperCase() + word.slice(1));
+//   }
+//   return finalString.join(' ');
 }
 
 console.log(capitalize("a short sentence"));
