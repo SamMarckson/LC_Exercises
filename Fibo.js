@@ -8,10 +8,16 @@
 // Example:
 //   fib(4) === 3
 
+// Recursive Solution
 function fib(n) {
-  let fiboSeq = [0, 1];
-  for (let i = 2; i <= n; i++) {
-    fiboSeq.push(fiboSeq[i - 1] + fiboSeq[i - 2]);
-  }
-  return fiboSeq[n];
+    if(n < 2) return n;
+    return fib(n-1) + fib(n-2);
 }
+
+// function fib(n) {
+//   let fiboSeq = [0, 1];
+//   for (let i = 2; i <= n; i++) {
+//     fiboSeq.push(fiboSeq[i - 1] + fiboSeq[i - 2]);
+//   }
+//   return fiboSeq[n];
+// }
