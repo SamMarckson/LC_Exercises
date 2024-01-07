@@ -8,12 +8,15 @@
  */
 var merge = function (nums1, m, nums2, n) {
   let backwardsCounter = nums1.length - 1;
+
   while (nums1[backwardsCounter] === 0) {
     nums1.pop();
     backwardsCounter--;
   }
+
   nums1.push(...nums2);
   nums1.sort((a, b) => a - b);
+
   while (nums1.length < m + n) {
     nums1.push(0);
   }
