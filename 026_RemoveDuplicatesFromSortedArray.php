@@ -1,5 +1,7 @@
 <!-- https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/ -->
+
 <?php
+
 class Solution {
   function removeDuplicates(&$nums) {
       for($i = 1; $i < count($nums); $i++) {
@@ -12,4 +14,5 @@ class Solution {
       return count($nums);
   }
 }
+
 ?>
