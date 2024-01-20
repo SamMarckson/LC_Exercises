@@ -1,3 +1,5 @@
+// Source: https://leetcode.com/problems/insert-interval/description/
+
 var insert = function(intervals, newInterval) {
   let [firstComparative, lastComparative] = newInterval;
   let leftArray = [];
