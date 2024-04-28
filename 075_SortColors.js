@@ -38,3 +38,8 @@ var sortColors = function (nums) {
     countAll++;
   }
 };
+
+/* 
+Time Complexity = O(n);
+Space Complexity = O(1);
+*/
